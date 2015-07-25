@@ -1,0 +1,139 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
+-define:UNITY_5_1_1
+-define:UNITY_5_1
+-define:UNITY_5
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_4_6_FEATURES
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PHYSICS_PHYSX3
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_AUDIOMIXER_SUSPEND
+-define:ENABLE_EDITOR_METRICS
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:ENABLE_LOCALIZATION
+-define:UNITY_IPHONE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GAMECENTER
+-define:ENABLE_NETWORK
+-define:UNITY_IPHONE_API
+-define:UNITY_IOS
+-define:ENABLE_TEXTUREID_MAP
+-define:PLAYERCONNECTION_LISTENS_FIXED_PORT
+-define:DEBUGGER_LISTENS_FIXED_PORT
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+Assets/MainMenu.cs
+Assets/PauseMenu.cs
+Assets/PlayerBoostFallState.cs
+Assets/PlayerRunState.cs
+Assets/RevealWaitState.cs
+"Assets/Scripts/Old Prototypes/BackgroundScroller.cs"
+"Assets/Scripts/Old Prototypes/CameraRotationController.cs"
+"Assets/Scripts/Old Prototypes/ConstantRotate.cs"
+"Assets/Scripts/Old Prototypes/DeleteOffscreen.cs"
+"Assets/Scripts/Old Prototypes/FOF/BigCreature.cs"
+"Assets/Scripts/Old Prototypes/FOF/Carrier.cs"
+"Assets/Scripts/Old Prototypes/FOF/CharacterMove.cs"
+"Assets/Scripts/Old Prototypes/FOF/ContainerButtons.cs"
+"Assets/Scripts/Old Prototypes/FOF/Creature.cs"
+"Assets/Scripts/Old Prototypes/FOF/DragControls.cs"
+"Assets/Scripts/Old Prototypes/FOF/GoodCreatureSelect.cs"
+"Assets/Scripts/Old Prototypes/FOF/LevelManager.cs"
+"Assets/Scripts/Old Prototypes/FOF/SpawnCreatures.cs"
+"Assets/Scripts/Old Prototypes/FOF/WayPoint.cs"
+"Assets/Scripts/Old Prototypes/Modifier.cs"
+"Assets/Scripts/Old Prototypes/ModifierBoost.cs"
+"Assets/Scripts/Old Prototypes/ModifierRedirect.cs"
+"Assets/Scripts/Old Prototypes/ModifierRotate.cs"
+"Assets/Scripts/Old Prototypes/PlatformID.cs"
+"Assets/Scripts/Old Prototypes/PlayerController.cs"
+"Assets/Scripts/Old Prototypes/PortalController.cs"
+"Assets/Scripts/Old Prototypes/PortalManager.cs"
+"Assets/Scripts/Old Prototypes/Teleportable.cs"
+Assets/Scripts/Popz/Background.cs
+Assets/Scripts/Popz/BackgroundManager.cs
+Assets/Scripts/Popz/Grid.cs
+Assets/Scripts/Popz/GroundGenerator.cs
+Assets/Scripts/Popz/Menu.cs
+Assets/Scripts/Popz/MultiObj/Bin.cs
+Assets/Scripts/Popz/MultiObj/CharacterMovement.cs
+Assets/Scripts/Popz/MultiObj/CloakControl.cs
+Assets/Scripts/Popz/MultiObj/Movement.cs
+Assets/Scripts/Popz/MultiObj/MultiObjGameManager.cs
+Assets/Scripts/Popz/MultiObj/MultiObjPlayer.cs
+Assets/Scripts/Popz/MultiObj/PlantInfo.cs
+Assets/Scripts/Popz/MultiObj/PlantSpawner.cs
+Assets/Scripts/Popz/MultiObj/PlayerColliderDisablerEnabler.cs
+Assets/Scripts/Popz/MultiObj/Selection.cs
+Assets/Scripts/Popz/N-Back/NbackGameManager.cs
+Assets/Scripts/Popz/N-Back/NbackGenerator.cs
+Assets/Scripts/Popz/N-Back/NbackObjControl.cs
+Assets/Scripts/Popz/N-Back/SpikeScript.cs
+Assets/Scripts/Popz/ParallaxBackground.cs
+Assets/Scripts/Popz/Pattern/Bubble.cs
+Assets/Scripts/Popz/Pattern/Cloud.cs
+Assets/Scripts/Popz/Pattern/Collectible.cs
+Assets/Scripts/Popz/Pattern/CollectibleGenerator.cs
+Assets/Scripts/Popz/Pattern/FixedHeight.cs
+Assets/Scripts/Popz/Pattern/Pattern.cs
+Assets/Scripts/Popz/Pattern/PatternLevelManager.cs
+Assets/Scripts/Popz/Pattern/Platform.cs
+Assets/Scripts/Popz/Pattern/PlatformGenerator.cs
+Assets/Scripts/Popz/Pattern/Runner.cs
+Assets/Scripts/Popz/Pattern/Stats.cs
+Assets/Scripts/Popz/Player.cs
+Assets/Scripts/Popz/PopzGameManager.cs
+Assets/Scripts/Popz/Progression.cs
+Assets/Scripts/Popz/Settings.cs
+Assets/Scripts/Popz/SettingsMenu.cs
+Assets/Scripts/Popz/StateMachineScripts/BubblePopState.cs
+Assets/Scripts/Popz/SwipeHandler.cs
+Assets/Scripts/Popz/TerrainChunk.cs
+Assets/Scripts/Popz/TerrainGenerator.cs
+Assets/Scripts/Popz/Util.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Xml.Linq.dll"
