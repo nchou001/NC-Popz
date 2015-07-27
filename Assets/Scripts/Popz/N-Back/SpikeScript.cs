@@ -9,12 +9,8 @@ public class SpikeScript : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Player> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
+	// When player hits obstacle, deal damage
 	void OnTriggerEnter2D(Collider2D col) {
 		if(col.CompareTag("Player")){
 			player.Damage (1);

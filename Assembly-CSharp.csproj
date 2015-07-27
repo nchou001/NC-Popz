@@ -91,6 +91,7 @@
      <Compile Include="Assets\Scripts\Popz\MultiObj\Selection.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\NbackGameManager.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\NbackGenerator.cs" />
+     <Compile Include="Assets\Scripts\Popz\N-Back\NbackLevelSelect.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\NbackObjControl.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\SpikeScript.cs" />
      <Compile Include="Assets\Scripts\Popz\ParallaxBackground.cs" />

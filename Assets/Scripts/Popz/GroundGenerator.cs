@@ -96,6 +96,7 @@ public class GroundGenerator : MonoBehaviour {
 		
 		// Create piece
 		Transform piece;
+
 		if (ceiling) {
 			piece = ceiling3wide;
 			
@@ -116,7 +117,8 @@ public class GroundGenerator : MonoBehaviour {
 		for (int i = x; i < x + wide; ++i) {
 			grid.MarkGrid(i, y);
 		}
-		
+		Destroy (t.gameObject, 15);
+
 		return t;
 	}
 }

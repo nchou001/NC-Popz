@@ -99,6 +99,12 @@ public class Player : MonoBehaviour {
 		this.GetComponent<Animator>().SetBool("PlayerInAir",!onGround);
 
 		LivesText.GetComponent<Text>().text = "Lives: "+numLives.ToString();
+
+		if (numLives <= 0) {
+			int n = NbackGenerator.currentLevel;
+			Application.LoadLevel (Application.loadedLevel);
+			NbackGenerator.setLevel(n);
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D col)

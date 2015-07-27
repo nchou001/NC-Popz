@@ -21,7 +21,6 @@ public class NbackObjControl : MonoBehaviour {
 	
 	private bool isCorrect = false;
 
-
 	// The currently revealed object on the screen
 	static NbackObjControl currentRevealed = null;
 	
@@ -60,8 +59,9 @@ public class NbackObjControl : MonoBehaviour {
 	
 	void Reveal() {
 		//GetComponent<SpriteRenderer> ().sprite = revealSprite;
-		revealChild.GetComponent<Animator>().SetInteger("RevealState",1);
-
+		if (NbackGenerator.nLevel == NbackGenerator.prevnLevel) {
+			revealChild.GetComponent<Animator> ().SetInteger ("RevealState", 1);
+		} 
 	}
 	
 	void Cloak() {
