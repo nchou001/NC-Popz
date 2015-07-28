@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour {
 	private float moveTicker;
 	private float moveWaitTime = 3f;
 	private float objVelocityX = 0f;
-	private float objVelocityY = 0f;
+	private float objVelocityY = 1f;
 	private float extraSpeed = 1f;
 	
 	private int direction;
@@ -65,7 +65,7 @@ public class Movement : MonoBehaviour {
 		endAnimationPlay = false;
 		
 		objVelocityX = Random.Range(-3.0f, 3.0f);
-		objVelocityY = Random.Range (-2.0f, 2.0f);
+		objVelocityY = Random.Range (1f, 2.0f);
 		
 		translateBy = movementSpeed;
 		transform.Translate (translateBy * Time.deltaTime);
@@ -98,7 +98,7 @@ public class Movement : MonoBehaviour {
 			if (moveTicker <= 0) {
 				//These two values moves the bug around based on velocity
 				objVelocityX = Random.Range (-3.0f, 3.0f);
-				objVelocityY = Random.Range (-2.0f, 2.0f);
+				objVelocityY = Random.Range (1f, 2.0f);
 				
 				//Gets a random speed bonus for the velocity
 				extraSpeed = Random.Range (1.0f, 1.5f);
@@ -140,37 +140,37 @@ public class Movement : MonoBehaviour {
 				if ((distanceX <= 6.0f) && (distanceY <= 6.0f)) {
 					Debug.Log ("Bug is close enough to plant");
 					
-					var exclamationMark = this.transform.FindChild ("bugToPlantMarker");
-					exclamationMark.gameObject.SetActive (true);
+					//var exclamationMark = this.transform.FindChild ("bugToPlantMarker");
+					//exclamationMark.gameObject.SetActive (true);
 					
-					if(isSwiped == false){
-						if (plantTouched == false) {
+					//if(isSwiped == false){
+					//	if (plantTouched == false) {
 							//						float step = 2.0f * Time.deltaTime;
 							//						transform.position = Vector2.MoveTowards (bugCurrentPos, plantCurrentPos, step);
 							////						objVelocityX = 0;
 							////						objVelocityY = 0;
 							
 							//Translate toward plant
-							Vector3 targetDir = plantCurrentPos - transform.position;
-							targetDir.Normalize ();
-							transform.Translate (targetDir * 2.0f * Time.deltaTime);
-							objVelocityX = 0;
-							objVelocityY = 0;
-						}
+					//		Vector3 targetDir = plantCurrentPos - transform.position;
+					//		targetDir.Normalize ();
+					//		transform.Translate (targetDir * 2.0f * Time.deltaTime);
+					//		objVelocityX = 0;
+					//		objVelocityY = 0;
+					//	}
 						
-						moveTicker = 2.0f;
+					//	moveTicker = 2.0f;
 					}
-				} else {
-					var exclamationMark = this.transform.FindChild ("bugToPlantMarker");
-					exclamationMark.gameObject.SetActive (false);
-				}
+				// else {
+					//var exclamationMark = this.transform.FindChild ("bugToPlantMarker");
+					//exclamationMark.gameObject.SetActive (false);
+				//}
 			}
 			//If there is no bug, then remove exclamation point object
-			else {
-				var exclamationMark = this.transform.FindChild ("bugToPlantMarker");
-				exclamationMark.gameObject.SetActive (false);
+			//else {
+				//var exclamationMark = this.transform.FindChild ("bugToPlantMarker");
+				//exclamationMark.gameObject.SetActive (false);
 			}
-		} else if (bugLeavesScene == true) {
+		    if (bugLeavesScene == true) {
 			var bugCurrentPos = this.transform;
 			//			objVelocityX = 3.5f;
 			//			objVelocityY = 3.0f;
@@ -250,13 +250,13 @@ public class Movement : MonoBehaviour {
 		}
 		//This means bug is too far down. Go UP
 		if (transform.position.y < yMin + 3.5f) {
-			objVelocityY = Random.Range (1.0f, 3.0f);
+			objVelocityY = Random.Range (1.0f, 2.0f);
 			//			Debug.Log("too far down, moving up. objVelocityY: " + objVelocityY);
 			
 		}
 		//This means bug is too far up. Go DOWN
 		if (transform.position.y > yMax - 1.0f) {
-			objVelocityY = Random.Range (-3.0f, -1.0f);
+			objVelocityY = Random.Range (-2.0f, -1.0f);
 			//			Debug.Log("too far up, moving down. objVelocityY: " + objVelocityY);
 		}
 	}

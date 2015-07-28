@@ -1,14 +1,10 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
-public class NbackGameManager : MonoBehaviour {
+public class NlevelDisplay : MonoBehaviour {
 
-	// Game configuration variables
-	
-	// Display Rate.
-
-	void Start(){
+	// Use this for initialization
+	void Start () {
 		if (Settings.toggleNback == false) {
 			gameObject.SetActive (false);
 		} else {

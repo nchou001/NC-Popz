@@ -108,7 +108,7 @@ public class NbackGenerator : MonoBehaviour {
 			int rand = Random.Range(0, 2);
 			//int y = rand == 0 ? 1 : 6;
 			if(timer >= 0f && timer < 40f){
-				y = 4;
+				y = 3;
 			} else if (timer >= 40f && timer < 80f) {
 				y = 5;
 			} else if (timer >= 80f && timer < 120f) {
@@ -223,7 +223,6 @@ public class NbackGenerator : MonoBehaviour {
 			prevnLevel = nLevel;
 			count = 0;
 		}
-
 		return t;
 	}
 

@@ -104,9 +104,9 @@ public class GroundGenerator : MonoBehaviour {
 				float topY = Camera.main.ScreenToWorldPoint(new Vector3(0, Camera.main.pixelHeight, 0)).y;
 				spawnPos.y = topY - (grid.cellSizeY / 2.0f) + 0.2f;
 			}else{
-			Vector3 newPos = spawnPos;
-			newPos.y = y-1.3f;
-			Transform test = GameObject.Instantiate (ceiling3big, newPos, Quaternion.identity) as Transform;
+			    Vector3 newPos = spawnPos;
+			    newPos.y = y-1.3f;
+			    Transform test = GameObject.Instantiate (ceiling3big, newPos, Quaternion.identity) as Transform;
 			}
 		} else {
 			piece = ground3wide;
@@ -120,5 +120,5 @@ public class GroundGenerator : MonoBehaviour {
 		Destroy (t.gameObject, 15);
 
 		return t;
-	}
+	}	
 }
