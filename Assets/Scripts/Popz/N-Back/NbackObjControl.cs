@@ -21,9 +21,6 @@ public class NbackObjControl : MonoBehaviour {
 	
 	private bool isCorrect = false;
 
-	// The currently revealed object on the screen
-	static NbackObjControl currentRevealed = null;
-	
 	// Use this for initialization
 	void Start () {
 		revealSprite = GetComponent<SpriteRenderer> ().sprite;
@@ -53,24 +50,16 @@ public class NbackObjControl : MonoBehaviour {
 		float halfway = Camera.main.ScreenToWorldPoint (new Vector3 (Camera.main.pixelWidth / 2, 0)).x;
 		
 		if (transform.position.x < halfway) {
-			UpdateCurrentRevealed(this);
+			if (NbackGenerator.nLevel == NbackGenerator.prevnLevel) {
+				revealChild.GetComponent<Animator> ().SetInteger ("RevealState", 1);
+			}else{
+				this.enabled = false;
+			}
 		}
-	}
-	
-	void Reveal() {
-		//GetComponent<SpriteRenderer> ().sprite = revealSprite;
-		if (NbackGenerator.nLevel == NbackGenerator.prevnLevel) {
-			revealChild.GetComponent<Animator> ().SetInteger ("RevealState", 1);
-		} 
 	}
 	
 	void Cloak() {
 		//GetComponent<SpriteRenderer> ().sprite = cloakSprite;
-	}
-	
-	static void UpdateCurrentRevealed(NbackObjControl next) {
-		currentRevealed = next;
-		next.Reveal ();
 	}
 	
 	public void MarkCorrect() {

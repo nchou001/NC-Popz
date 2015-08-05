@@ -11,6 +11,7 @@ public class TerrainGenerator : MonoBehaviour {
 	private CollectibleGenerator collectibleGen;
 	private GroundGenerator groundGen;
 	private NbackGenerator nbackGen;
+	private SpikeSpawner spikeGen;
 	private Player player;
 
 

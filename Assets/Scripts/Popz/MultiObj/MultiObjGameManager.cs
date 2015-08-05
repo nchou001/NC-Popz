@@ -24,6 +24,11 @@ public class MultiObjGameManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		if (Settings.toggleMultiObj == true) {
+			gameObject.SetActive (true);
+		} else {
+			gameObject.SetActive (false);
+		}
 	}
 	
 	// Update is called once per frame

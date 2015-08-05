@@ -85,10 +85,12 @@
      <Compile Include="Assets\Scripts\Popz\MultiObj\Movement.cs" />
      <Compile Include="Assets\Scripts\Popz\MultiObj\MultiObjGameManager.cs" />
      <Compile Include="Assets\Scripts\Popz\MultiObj\MultiObjPlayer.cs" />
+     <Compile Include="Assets\Scripts\Popz\MultiObj\PillarScript.cs" />
      <Compile Include="Assets\Scripts\Popz\MultiObj\PlantInfo.cs" />
      <Compile Include="Assets\Scripts\Popz\MultiObj\PlantSpawner.cs" />
      <Compile Include="Assets\Scripts\Popz\MultiObj\PlayerColliderDisablerEnabler.cs" />
      <Compile Include="Assets\Scripts\Popz\MultiObj\Selection.cs" />
+     <Compile Include="Assets\Scripts\Popz\MultiObj\SpikeSpawner.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\NbackGameManager.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\NbackGenerator.cs" />
      <Compile Include="Assets\Scripts\Popz\N-Back\NbackLevelSelect.cs" />

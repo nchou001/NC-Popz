@@ -1,13 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Popz\N-Back\NbackGameManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Popz\MultiObj\MultiObjGameManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Popz\N-Back\NbackGenerator.cs" Line="40" Column="18" />
-      <File FileName="Assets\Scripts\Popz\GroundGenerator.cs" Line="111" Column="11" />
-      <File FileName="Assets\Scripts\Popz\MultiObj\Movement.cs" Line="365" Column="10" />
-      <File FileName="Assets\Scripts\Popz\PopzGameManager.cs" Line="14" Column="2" />
-      <File FileName="Assets\Scripts\Popz\N-Back\NbackGameManager.cs" Line="9" Column="18" />
-      <File FileName="Assets\Scripts\Popz\Settings.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Popz\MultiObj\SpikeSpawner.cs" Line="33" Column="19" />
+      <File FileName="Assets\Scripts\Popz\Util.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Popz\MultiObj\PillarScript.cs" Line="15" Column="52" />
+      <File FileName="Assets\Scripts\Popz\N-Back\SpikeScript.cs" Line="16" Column="22" />
+      <File FileName="Assets\Scripts\Popz\N-Back\NbackGenerator.cs" Line="178" Column="15" />
+      <File FileName="Assets\Scripts\Popz\N-Back\NbackGameManager.cs" Line="12" Column="1" />
+      <File FileName="Assets\Scripts\Popz\MultiObj\MultiObjGameManager.cs" Line="29" Column="11" />
+      <File FileName="Assets\Scripts\Popz\Settings.cs" Line="9" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

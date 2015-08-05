@@ -174,7 +174,11 @@ public class NbackGenerator : MonoBehaviour {
 		// Used to spawn randomly placed obstacles from floor to ceiling in levels 4 and 5
 		int r = Random.Range (-7, 5);
 		int r2 = Random.Range (-7, 0);
-		if (timer >= 360f && timer < 480f) {
+		if (timer >= 360f && timer < 400f) {
+			if(r < -1){
+				Transform i = GenerateObstacles (spawnPos.x+5, -7);
+			}
+		} else if (timer >= 400f && timer < 480f) {
 			Transform i = GenerateObstacles (spawnPos.x+5, r);
 		} else if (timer >= 480) {
 			Transform i = GenerateObstacles (spawnPos.x+5, r2);
